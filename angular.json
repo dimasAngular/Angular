@@ -44,7 +44,8 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "https://dimasAngular.github.io/Angular/"
             },
             "development": {
               "optimization": false,
