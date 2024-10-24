@@ -1,0 +1,140 @@
+/* You can add global styles to this file, and also import other style files */
+@import "margin.css";
+
+body{
+    height: 100dvh;
+    background: #1a1919;
+    color: white;
+    background-image: url(assets/images/Img\ Bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+*,
+*:Before,
+*:After{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.skill-tag{
+    display: inline;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid white;
+    font-weight: 700;
+    font-size: 12px;
+    height: 24px;
+}
+.btn{
+    background-color: blueviolet;
+    color: #231557;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 4px;
+
+}
+
+.btn-shadow{
+    position: relative;
+    
+}
+.btn-shadow::before{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    background-color: #5f646d;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 4px ;
+
+}
+h1{
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 800;
+}
+
+.h6{
+
+font-size: 18px;
+font-weight: 800;
+line-height: 24px;
+text-align: left;
+
+}
+
+h4{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 800;
+}
+.regular{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.tt-control-label{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    display: block;
+}
+
+.tt-input{
+    width: 100%;
+    margin-top: 8px;
+    display: block;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 12px 20px;
+    background-color: #1a1919;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: white;
+}
+
+.tt-form-input{
+height: 33px;
+border: none;
+border-bottom: 1px solid white;
+background: none;
+color: white;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+
+    
+}
+.tt-form-label{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+
+}
+
+.tt-form-label__text{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+}
+
+.tt-textArea{
+    height: 84px;
+    resize: none;
+   
+}

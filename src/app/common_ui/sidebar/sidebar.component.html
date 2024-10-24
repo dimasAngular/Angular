@@ -1,0 +1,41 @@
+<img src="assets/svg-sidebar/Logo-Tik-Talk.svg" alt="" class="mgl16   mgb20">
+
+<nav>
+    <ul class="main-menu-list">
+        @for (menuItem of menuItems; track id) {
+        <li>
+            <a class="menu-item" [routerLink]="[menuItem.link]">
+                <svg [ion]="menuItem.ion"></svg>
+                <span>{{menuItem.label}}</span>
+            </a>
+        </li>
+        }
+    </ul>
+</nav>
+
+<p class="medium-text mgb20">подписчики</p>
+
+
+
+@for(profile of subscribers$ | async; track profile.id ){
+
+<app-subscriber-card [profile]="profile"></app-subscriber-card>
+
+}
+
+<footer class="sidebar__footer">
+    @if(me(); as me){
+    @if(me.avatarUrl){
+    <img [src]="me.avatarUrl | imgUrl">
+    }@else {
+    <img src="assets/Img.png" alt="dsa">
+    }
+    <div class="medium-text username-text">{{me.username}}</div>
+
+    <a [routerLink]="['settings']" class="settings-btn">
+
+        <svg ion ="settings"></svg>
+    </a>
+
+    }
+</footer>
